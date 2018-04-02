@@ -1,17 +1,12 @@
-/*!
- * Socket.IO v2.1.0
- * (c) 2014-2018 Guillermo Rauch
- * Released under the MIT License.
- */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["io"] = factory();
+		exports["sio"] = factory();
 	else
-		root["io"] = factory();
+		root["sio"] = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -155,6 +150,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	exports.Manager = __webpack_require__(9);
 	exports.Socket = __webpack_require__(34);
+	exports.debug = debug;
 
 /***/ }),
 /* 1 */

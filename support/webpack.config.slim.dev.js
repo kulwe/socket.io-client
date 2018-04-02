@@ -5,7 +5,7 @@ module.exports = {
   name: 'slim',
   entry: './lib/index.js',
   output: {
-    library: 'io',
+    library: 'sio',
     libraryTarget: 'umd',
     filename: 'socket.io.slim.dev.js'
   },
